@@ -1,30 +1,64 @@
 # Mapty — Workout Mapping App
 
-A browser-based workout tracker built while following **Jonas Schmedtmann’s JavaScript course**. This is a learning project, not an original product concept. The implementation was reviewed and cleaned up for this portfolio repository.
+A browser-based workout tracking application built while studying object-oriented programming (OOP) and modern JavaScript.
+
+This project is based on Jonas Schmedtmann's JavaScript course and represents my learning and implementation practice.
+
+## Live Demo
+
+[Try Mapty App](https://sametbaltaa.github.io/mapty-app/)
+
+*Allow location access in your browser to use the interactive map.*
 
 ## Features
 
-- Add running or cycling workouts by selecting a location on the map
-- Record distance and duration, plus cadence for runs or elevation gain for rides
-- Calculate running pace (min/km) and cycling speed (km/h)
-- View workouts as map markers and in a sidebar list
-- Click a saved workout to move the map to its location
-- Persist workouts in browser Local Storage
+- Add running and cycling workouts by selecting locations on a map
+- Record distance, duration, cadence, and elevation gain
+- Automatically calculate running pace (min/km) and cycling speed (km/h)
+- Display workouts using interactive map markers
+- Navigate to workout locations by selecting entries in the sidebar
+- Save workout data using browser Local Storage
+- Restore saved workouts when the application reloads
 
 ## Technologies
 
-- HTML, CSS, and vanilla JavaScript (ES6+ classes, inheritance, private fields)
-- Leaflet.js and OpenStreetMap tiles
-- Browser Geolocation API and Local Storage
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- Object-Oriented Programming (OOP)
+- ES6 Classes and Class Inheritance
+- Private Class Fields
+- Leaflet.js
+- OpenStreetMap
+- Geolocation API
+- Local Storage API
 
-## Run locally
+## What I Learned
 
-1. Keep `index.html`, `script.js`, `style.css`, `logo.png`, and `icon.png` in the same directory.
-2. Open the directory using VS Code Live Server, or run a local HTTP server.
-3. Allow location access in your browser, then click the map to record a workout.
+- Structuring an application using object-oriented programming principles
+- Creating reusable classes through inheritance
+- Managing application state with private class fields
+- Integrating a third-party mapping library (Leaflet.js)
+- Working with browser APIs such as Geolocation and Local Storage
+- Handling user interactions through DOM events
+- Validating user input and calculating workout metrics
 
-Geolocation generally requires a secure context (HTTPS or localhost). An internet connection is required to load Leaflet and map tiles. Data stays in your browser.
+## Run Locally
+
+1. Clone the repository.
+2. Keep `index.html`, `script.js`, `style.css`, `logo.png`, and `icon.png` in the same directory.
+3. Open the project using VS Code Live Server or another local HTTP server.
+4. Allow location access in your browser.
+5. Click anywhere on the map to add a workout.
+
+Geolocation generally requires HTTPS or localhost. An internet connection is needed to load Leaflet and the map tiles.
+
+Workout data is stored locally in the browser.
 
 ## Attribution
 
-This educational project is based on **Jonas Schmedtmann’s Mapty app** from *The Complete JavaScript Course*. Original course authorship and attribution are preserved in the application. It is presented here as coursework and practice, not as an independently conceived app.
+This educational project is based on **Jonas Schmedtmann's Mapty application** from *The Complete JavaScript Course*.
+
+The original design and course materials belong to Jonas Schmedtmann. This repository demonstrates my implementation and understanding of the concepts taught during the course.
+
+The portfolio version was reviewed and cleaned up, including corrections to workout calculations and removal of unnecessary debugging code.
